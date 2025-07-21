@@ -6,6 +6,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a Model Context Protocol (MCP) server implementation for interacting with Salesforce through its REST API using jsforce. The server exposes Salesforce operations as MCP tools that can be called by Claude and other AI assistants.
 
+**Repository Status**: This is a fork of the original `kablewy/salesforce-mcp-server` repository, maintained at `https://github.com/harrisoncannon/salesforce-mcp-server`.
+
 ## Common Development Commands
 
 ### Setup
@@ -25,6 +27,16 @@ npm run dev       # Development mode with file watching
 ```bash
 # Run evaluations (requires OPENAI_API_KEY environment variable)
 OPENAI_API_KEY=your-key npx mcp-eval src/evals/evals.ts src/tools.ts
+```
+
+### Git Workflow
+```bash
+# Standard development workflow
+git add .
+git commit -m "Your commit message"
+git push origin main
+
+# The remote origin is configured to: https://github.com/harrisoncannon/salesforce-mcp-server.git
 ```
 
 ## Architecture
