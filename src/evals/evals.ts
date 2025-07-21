@@ -40,7 +40,7 @@ const metadataRetrieveEval: EvalFunction = {
     }
 };
 
-const queryEval: EvalFunction = {
+const queryEval2: EvalFunction = {
     name: 'query Tool Evaluation',
     description: 'Evaluates the correctness of executing a SOQL query on Salesforce',
     run: async () => {
